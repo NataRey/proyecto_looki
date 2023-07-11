@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
           timer: 2000
         }).then(() => {
           // Código adicional que puedes agregar después de iniciar sesión exitosamente
-          window.location.href='../pages/feed.html'
+          window.location.href='./pages/feed.html'
         });
       } else {
         Swal.fire({
@@ -48,12 +48,13 @@ document.addEventListener("DOMContentLoaded", function() {
   
       Swal.fire({
         icon: 'success',
-        title: 'Registro exitoso',
+        title: 'Bienvenido a LOOK-UP',
+        text: 'Registro exitoso',
         showConfirmButton: false,
-        timer: 2000
+        timer: 4000
       }).then(() => {
         // Código adicional que puedes agregar después de un registro exitoso
-        window.location.href='../pages/feed.html'
+        window.location.href='./pages/feed.html'
       });
     });
   });

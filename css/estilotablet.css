@@ -35,7 +35,52 @@
   }
   
 
+  .Mision {
+    margin-left: 22%;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    color: #06113B;
+    border: 10px solid rgb(123, 255, 0);
+    position: relative;
+    background-color: #0683a63e;
+  }
 
+  .Mision h2{
+    margin-top: 39px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 15px;
+  }
+  .Mision P{
+    font-weight: 500;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  
+.Vision {
+  
+  margin-right: 17%;
+  padding: 2px;
+  font-family: 'Poppins', sans-serif;
+  color: #06113B;
+  border: 10px solid rgb(255, 0, 238);
+  position: relative;
+  background-color: #063b2480;
+}
+  
+  .Vision h2{
+    margin-top: 2px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 15px;
+  }
+  .Vision P{
+    font-weight: 500;
+    text-align: center;
+    font-size: 10px;
+  }
+  
 
 
 
@@ -45,19 +90,24 @@
 }
 
 .nosotros header h1 {
-    font-size: 80px;
+    font-size: 46px;
+    margin-left: -2px;
 }
-.nosotros header .grilla {
+/* .nosotros header .grilla {
     width: 100%;
     height: 100px;
     display: grid;
-    grid-template-columns: 40% 20% 40%;
-}
-.nosotros nav {
+    grid-template-columns: auto auto auto auto;
+    
+}*/
+.nosotros nav{
+ /*  border:5px solid red;*/
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
   justify-content: center;
-  background-color:#6c757d ;
+  background-color:#06113B ;
 }
 
   .nosotros .grupo .integrantes {
@@ -191,7 +241,7 @@
         background-color: blue;
     }
     .contactenos header {
-        width: 100vw;
+        width: 100vw; 
     }
     
     .contactenos header h1 {

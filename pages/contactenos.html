@@ -14,40 +14,21 @@
     <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="stylesheet" href="../css/estilocel.css">
     <link rel="stylesheet" href="../css/estilotablet.css">
+    <script src="https://kit.fontawesome.com/276e522079.js" crossorigin="anonymous"></script>
     <title>Contactenos</title>
   </head>
   <body class="contactenos">
     <header>
-      <div class="grilla">
-        <h1 class="ll">L</h1>
-        <canvas class="ojos" id="canvas" width="150px" height="100px"> </canvas>
-        <h1 class="ki">KI</h1>
-      </div>
+      <nav class="navbar">
+        <h1 class="ll">Look-up</h1>
+        <a href="../index.html">Home</a>
+        <a href="./nosotros.html">Nosotros</a>
+        <a href="./contactenos.html">Contáctanos</a>
+      </nav>
     </header>
-    <nav>
-        <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             LOOK-up
-            </a>
-          
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Perfil</a></li>
-              <li><a class="dropdown-item" href="#">Conexiones</a></li>
-              <li><a class="dropdown-item" href="#">Buzon</a></li>
-              <li><a class="dropdown-item" href="#">Cursos</a></li>
-              <li><a class="dropdown-item" href="#">Notificaciones</a></li>
-            </ul>
-          </div>
-    </nav>
-    <section class="tituloContacto">
-    <h2>Contactenos</h2>
-  </section>
+    
     <main>
-      <section class="direccionOficina">
-        <h2>Estamos ubicados</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.2699204776472!2d-74.06476962582578!3d4.7231098414645585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f853c5828a239%3A0x6b33cfce431b1811!2sCentro%20Comercial%20Paseo%20San%20Rafael!5e0!3m2!1ses!2sco!4v1686061521052!5m2!1ses!2sco" width="500" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section>
-      <section class="formularioAtencion">
+       <section class="formularioAtencion">
         <h2>Formulario de atención</h2>
         <form id="registrationForm" action="https://formspree.io/f/mlekypja"
         method="POST">
@@ -76,24 +57,48 @@
           name="comentario"
           rows="5" cols="35"
           id="comentario"></textarea>
-          <button type="submit">ENVIAR</button>
+          <button type="submit">Enviar</button>
         </form>
       </section>
+      <section class="direccionOficina">
+      
+      </section>
     </main>
-    <footer>
-        <div class="ladoIz">
-           <a href="../pages/nosotros.html">Quienes somos</a>
-           <a href="#">Trabaja con Nosotros</a>
-           <a href="#">Contactenos</a>
+    
+    <footer class="footerP">
+      <div class="footer1">
+        <div class="lado1">
+          <p href="../index.html" class="look">Look-up</p>
+
+          <h4>La red social que cambia tu mundo.</h4>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-linkedin"></a>
         </div>
-        <div class="ladoCe">
-            <p>copy&</p>
+        <div class="lado2">
+          <h3>NOSOTROS</h3>
+          <a href="./nosotros.html">Acerca de</a>
+          <a href="./nosotros.html">Valores</a>
+          <a href="./contactenos.html">Contactenos</a>
         </div>
-        <div class="ladoDer">
-            <p>Aliados</p>
-            <a href="#">Comunidad discord</a>
-            <a href="https://platzi.com/">Platzi</a>
+        <div class="lado2">
+          <h3>CURSOS</h3>
+          <a href="./nosotros.html">Cursos</a>
+          <a href="./nosotros.html">Proyectos</a>
+          <a href="./contactenos.html">Conexiones</a>
         </div>
+
+        <div class="lado2">
+          <h3>COMUNIDAD</h3>
+          <a href="./nosotros.html">Github</a>
+          <a href="./nosotros.html">Discord</a>
+          <a href="./contactenos.html">Telegram</a>
+        </div>
+      </div>
+      <div class="footer2">
+        <h4>© Copyright 2023 Look-Up Todos los derechos reservados</h4>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

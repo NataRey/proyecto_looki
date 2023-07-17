@@ -202,7 +202,9 @@ font-family: 'Poppins', sans-serif;
    align-items: center;
    margin-left: 20%;
   }
-
+.soloCel {
+  display: none;
+}
 
 /*.logreg-box  .form-box.login{
     transform: translateX(0);
@@ -348,16 +350,17 @@ body{
 @media screen and (min-width: 250px) and (max-width: 500px) {
   .header {
     z-index: 3;
+    margin: -50px 0;
   }
   .header .navbar {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
   }
 
   .header .navbar a {
-    font-size: 10px;
+    font-size: 16px;
   }
 
   /*FONDO DE LA IMAGEN*/
@@ -369,6 +372,7 @@ body{
     justify-content: center;
     background-size: cover;
     background-position: center;
+    background-image: url(../img/Fondo3.jpg);
   }
 
   /*IMAGEN CENTRAL*/
@@ -396,9 +400,13 @@ body{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
   }
   /*TAMAÑO DE LA CAJA DE REGISTRO*/
+  .soloCel {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster Two', cursive; /*TIPOGRAFIA*/
+  }
   .form-box h2 {
     font-size: 20px;
     text-align: center;
@@ -469,13 +477,17 @@ body{
     align-items: center;
     justify-content: center;
   }
-
+  .soloCel {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster Two', cursive; /*TIPOGRAFIA*/
+  }
   .logreg-box .form-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 650px;
+    height: 100%;
   }
 
   /*esto oculta el formulario*/

@@ -1,8 +1,18 @@
-
 /**
  * La función inicializa un elemento de lienzo y agrega un detector de eventos para que el movimiento
  * del mouse active una animación.
  */
+$(document).ready(function(){
+    $('.bx div').click(function(){
+        if($(this).hasClass('spin')){
+            $('.bx div').removeClass('spin');}
+            else{
+                $('.bx div').removeClass('spin');  
+                $(this).addClass('spin');
+            }
+        });
+    });
+
 
 
 let canvas;

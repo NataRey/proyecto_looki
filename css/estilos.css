@@ -36,26 +36,28 @@ header {
 } 
 
 .identidad{/*IMAGEN CENTRAL*/
-  display: grid;
-  grid-template-columns: 48% 50%;
+  display: flex;
  /* display: flex;
   flex-wrap: 10;*/
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   
    /*border: 10px solid orange;*/
   background: rgba(26, 6, 59, 0.233);
+  background-image: url(../img/Fondo6.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
   
 }
 
-.fondo4{
-  width: 100vw;
-  height: 100vh;
+/* .fondo4{ */
+  /* width: 100%; */
+  /* height: 100vh; */
   /*border: 10px solid purple;*/
-  position: relative;
-}
+  /* position: relative; */
+/* } */
 .MisionV {/*Contenedor Mision y Vision*/
-  margin-top: 10%;
+  /* margin-top: 10%; */
   font-family: 'Poppins', sans-serif;
  /* border: 10px solid RED;*/
   position: relative;
@@ -63,46 +65,57 @@ header {
 }
 
 .Mision {
-  margin-left: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+  align-items: end;
+  position: relative;
+  top: 80px;
+  left: 800px;
   padding: 5px;
   font-family: 'Poppins', sans-serif;
   color: #06113B;
  /* border: 10px solid rgb(123, 255, 0);*/
   position: relative;
  /*  background-color: #0683a63e;*/
+ width: 500px;
 }
-
 .Mision h2{
   font-weight: bolder;
-  text-align: center;
 }
+
 .Mision P{
   font-weight: 500;
   text-align: justify;
-  font-size: 18px;
+  font-size: 15px;
+
 }
 
 .Vision {
-  margin-top: 15%;
-  margin-right: 17%;
-  padding: 39px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content:flex-end; */
+  align-items: end;
+  position: relative;
+  top: 210px;
+  left: 660px;
+  padding: 5px;
   font-family: 'Poppins', sans-serif;
   color: #06113B;
-  /*border: 10px solid rgb(255, 0, 238);*/
+ /* border: 10px solid rgb(123, 255, 0);*/
   position: relative;
- /* background-color: #063b2480;*/
+ /*  background-color: #0683a63e;*/
+ width: 480px;
 }
 
 .Vision h2{
   font-weight: bolder;
-  text-align: center;
 }
 .Vision P{
   font-weight: 500;
   text-align: justify;
-  font-size: 18px;
+  font-size: 16px;
 }
-
 
 .index {
 
@@ -422,10 +435,10 @@ section{/*SECTION CARROUSEL*/
   }
 
 
-
-/* Pagina de contacto */
-
-
+/*''''' Pagina de contacto '''''*/
+/*''''' Pagina de contacto '''''*/
+/*''''' Pagina de contacto '''''*/
+/*''''' Pagina de contacto '''''*/
 
 .contactenos main {
   display: flex;

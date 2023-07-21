@@ -5,277 +5,368 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Look-up Cursos</title>
     <link rel="shortcut icon" href="../Recursos/L.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/estilosCursos.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-
-    <link rel="stylesheet" href="../css/cursocel.css" />
-    <link rel="stylesheet" href="../css/cursotablet.css" />
-    <link rel="stylesheet" href="../css/cursos.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/276e522079.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/cursos2.js"></script>
   </head>
   <body class="cursos">
     <header>
       <nav class="navbar">
-        <h2>Look-up</h2>
-        <div class="navbarNav">
-          <a href="./nosotros.html">Sobre nosotros</a>
-          <a href="./contactenos.html">Contactanos</a>
-        </div>
+        <h1 class="ll">Look-up</h1>
+        <a href="../index.html">Home</a>
+        <a href="./nosotros.html">Nosotros</a>
+        <a href="./contactenos.html">Contáctanos</a>
+        <a href="./feed.html">Feed</a>
       </nav>
     </header>
 
-    <ul class="nav nav-tabs">
-      <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle"
-          data-bs-toggle="dropdown"
-          href="#"
-          role="button"
-          aria-expanded="false"
-          >Programación</a
-        >
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#Front">Front-End</a></li>
-          <li><a class="dropdown-item" href="#Back">Back-End</a></li>
-        </ul>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link dropdown-toggle"
-          data-bs-toggle="dropdown"
-          href="#"
-          role="button"
-          aria-expanded="false"
-          >Diseño Grafico</a
-        >
-        <ul class="dropdown-menu">
-          <li>
-            <a class="dropdown-item" href="#Aplicaciones">Aplicaciones</a>
-          </li>
-          <li><a class="dropdown-item" href="#UX">UX/UI</a></li>
-        </ul>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Datos">Base de datos</a>
-      </li>
-    </ul>
-    <main>
-      <h2>Programación</h2>
-      <section id="Front">
-        <h4>Front-End</h4>
-        <ul>
-          <li>
+    <div class="wrap">
+      <h1>Nuestros Cursos</h1>
+      <div class="store-wrapper">
+        <div class="category_list">
+          <a href="#" class="category_item" category="all">Todo</a>
+          <a href="#" class="category_item" category="Front">Front-End</a>
+          <a href="#" class="category_item" category="Back">Back-End</a>
+          <a href="#" class="category_item" category="Design">Diseño Grafico</a>
+          <a href="#" class="category_item" category="Ux">UX/UI</a>
+          <a href="#" class="category_item" category="Bases">Bases de datos</a>
+        </div>
+        <section class="products-list">
+          <div class="product-item" category="">
             <iframe
-              width="270"
-              height="200"
+              width="100%"
+              height="100%"
               src="https://www.youtube.com/embed/zxtkg3q9G6Q"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <span>Visión en Acción</span>
-          </li>
-          <li>
+            <a>Visión en Acción</a>
+          </div>
+          <div class="product-item" category="Front">
             <iframe
-              width="270"
-              height="200"
+              width="100%"
+              height="100%"
               src="https://www.youtube.com/embed/mNbnV3aN3KA"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <span>HTML</span>
-          </li>
-
-          <li>
+            <a href="#">Html</a>
+          </div>
+          <div class="product-item" category="Front">
             <iframe
-              width="270"
-              height="200"
-              src="https://www.youtube.com/embed/L1oMLsiMusQ"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/BtiiM3jeb_c"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <span>Javascript</span>
-          </li>
-        </ul>
-      </section>
-      <hr />
-      <section id="Back">
-        <h4>Back-End</h4>
-        <ul>
-          <li>
+            <a href="#">Sass</a>
+          </div>
+          <div class="product-item" category="Front">
             <iframe
-              width="270"
-              height="200"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/3yM5uXp-T_0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <a href="#">Css</a>
+          </div>
+          <div class="product-item" category="Front">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/XXllX0A_9KQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <a href="#">Bootstrap</a>
+          </div>
+          <div class="product-item" category="Front">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/4Q_KWjUfPCU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <a href="#">Javascript</a>
+          </div>
+          <div class="product-item" category="Front">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/ladwC6Lrs-M"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <a href="#">React Js</a>
+          </div>
+
+          <div class="product-item" category="Back">
+            <iframe
+              width="100%"
+              height="100%"
               src="https://www.youtube.com/embed/8iTO-BPkD5M"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <span>Java</span>
-          </li>
-          <li>
+            <a href="#">Java</a>
+          </div>
+          <div class="product-item" category="Back">
             <iframe
-              width="270"
-              height="200"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/nCB1gEkRZ1g"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <a href="#">Php</a>
+          </div>
+          <div class="product-item" category="Back">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/axHut2e84fc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <a href="#">C#</a>
+          </div>
+          <div class="product-item" category="Back">
+            <iframe
+              width="100%"
+              height="100%"
               src="https://www.youtube.com/embed/gOR9qZ3ZgwA"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <span>Phyton</span>
-          </li>
-          <li>
+            <a href="#">Phyton</a>
+          </div>
+          <div class="product-item" category="Back">
             <iframe
-              width="270"
-              height="200"
-              src="https://www.youtube.com/embed/HKFDsC_rMpU"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/If1Lw4pLLEo"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <span>Phyton</span>
-          </li>
-        </ul>
-      </section>
-      <hr />
-      <section id="Aplicaciones">
-        <h2>Diseño Grafico</h2>
-        <h4>Aplicativos</h4>
-        <ul>
-          <li>
+            <a href="#">Sprint Framework</a>
+          </div>
+          <div class="product-item" category="Design">
             <iframe
-              width="270"
-              height="200"
+              width="100%"
+              height="100%"
               src="https://www.youtube.com/embed/FB4DdUfvfwM"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <span>Photoshop</span>
-          </li>
-          <li>
+            <a href="#">Photoshop</a>
+          </div>
+          <div class="product-item" category="Design">
             <iframe
-              width="270"
-              height="200"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/ofqmwg5MfPk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <a href="#">Ilustrator</a>
+          </div>
+          <div class="product-item" category="Design">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/c0ZPYjsMXpM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <a href="#">Teoria del color</a>
+          </div>
+          <div class="product-item" category="Design">
+            <iframe
+              width="100%"
+              height="100%"
               src="https://www.youtube.com/embed/IReI3kYP6v0"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <span>Coreldraw</span>
-          </li>
-          <li>
+            <a href="#">Corel Draw</a>
+          </div>
+          <div class="product-item" category="Design">
             <iframe
-              width="270"
-              height="200"
-              src="https://www.youtube.com/embed/R3EBeCI0GJE"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/LaEcAgGbrak"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <span>Ilustrator</span>
-          </li>
-        </ul>
-      </section>
-      <hr />
-      <section id="UX">
-        <h4>UX/UI</h4>
-        <ul>
-          <li>
+            <a href="#">Corel Photo paint</a>
+          </div>
+          <div class="product-item" category="Ux">
             <iframe
-              width="270"
-              height="200"
-              src="https://www.youtube.com/embed/sWTAjzFtetc"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <span>UX</span>
-          </li>
-          <li>
-            <iframe
-              width="270"
-              height="200"
-              src="https://www.youtube.com/embed/7BufKLx9LGs"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <span>Figma</span>
-          </li>
-          <li>
-            <iframe
-              width="270"
-              height="200"
+              width="100%"
+              height="100%"
               src="https://www.youtube.com/embed/RatwuQvhpT8"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <span>AdobeXD</span>
-          </li>
-        </ul>
-      </section>
-      <hr />
-      <section id="Datos">
-        <h2>Bases de Datos</h2>
-        <ul>
-          <li>
+            <a href="#">Diseño web</a>
+          </div>
+          <div class="product-item" category="Ux">
             <iframe
-              width="270"
-              height="200"
-              src="https://www.youtube.com/embed/SKOiEXlFNeM"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/SqO_-olNvnU"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <span>Base de datos</span>
-          </li>
-          <li>
+            <a href="#">Figma</a>
+          </div>
+          <div class="product-item" category="Ux">
             <iframe
-              width="270"
-              height="200"
-              src="https://www.youtube.com/embed/0UwSq1Nt6TE"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/SMuC6DETqFc"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <span>Oracle</span>
-          </li>
-          <li>
+            <a href="#">Adobe XD</a>
+          </div>
+          <div class="product-item" category="Bases">
             <iframe
-              width="270"
-              height="200"
-              src="https://www.youtube.com/embed/FHdTxyR6rnc"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/4KJ4AN6YLeE"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <span>MySQL</span>
-          </li>
-        </ul>
-      </section>
-    </main>
+            <a href="#">MySQL</a>
+          </div>
+          <div class="product-item" category="Bases">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/cT1HAaPqI-c"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <a href="#">MongoDB</a>
+          </div>
+          <div class="product-item" category="Bases">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/xXkKeojOb1A"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <a href="#">Intala XAMPP</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="footerP">
+      <div class="footer1">
+        <div class="lado1">
+          <p href="../index.html" class="look">Look-up</p>
+
+          <h4>La red social que cambia tu mundo.</h4>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <div class="lado2">
+          <h3>NOSOTROS</h3>
+          <a href="./nosotros.html">Acerca de</a>
+          <a href="./nosotros.html">Valores</a>
+          <a href="./contactenos.html">Contactenos</a>
+        </div>
+        <div class="lado2">
+          <h3>CURSOS</h3>
+          <a href="./nosotros.html">Cursos</a>
+          <a href="./nosotros.html">Proyectos</a>
+          <a href="./contactenos.html">Conexiones</a>
+        </div>
+
+        <div class="lado2">
+          <h3>COMUNIDAD</h3>
+          <a href="./nosotros.html">Github</a>
+          <a href="./nosotros.html">Discord</a>
+          <a href="./contactenos.html">Telegram</a>
+        </div>
+      </div>
+      <div class="footer2">
+        <h4>© Copyright 2023 Look-Up Todos los derechos reservados</h4>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

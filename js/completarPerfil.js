@@ -46,7 +46,7 @@ submitBtn.addEventListener("click", function(){
     current += 1;
     setTimeout(function(){
       alert("Your Form Successfully Signed up");
-      window.location.href = "./cursos.html"; // Replace this URL with the Facebook page URL you want to redirect to.
+      window.location.href = "../pages/cursos.html";
     }, 800);
 });
 

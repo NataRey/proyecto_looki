@@ -40,15 +40,18 @@ nextBtnThird.addEventListener("click", function(event){
 });
 
 submitBtn.addEventListener("click", function(){
-    bullet[current - 1].classList.add("active");
-    progressCheck[current - 1].classList.add("active");
-    progressText[current - 1].classList.add("active");
-    //current += 1;
+    if (current < bullet.length) {
+      bullet[current - 1].classList.add("active");
+      progressCheck[current - 1].classList.add("active");
+      progressText[current - 1].classList.add("active");
+      current += 1;
+    }
+    
     setTimeout(function(){
       alert("Your Form Successfully Signed up");
       window.location.href = "../pages/cursos.html";
     }, 800);
-});
+  });
 
 
 prevBtnSec.addEventListener("click", function(event){

@@ -269,7 +269,7 @@ header {
 		margin: 0;
 		margin-bottom: 50px;
 	  }
-	  footer .footer1 .lado1 .look {
+	  /* footer .footer1 .lado1 .look {
 		font-size: 70px;
 	  }
 	
@@ -278,15 +278,15 @@ header {
 	  }
 	  footer .footer1 .lado2 a {
 		font-size: 20px;
-	  }
+	  } */
 	
 	  footer .footer2 {
 		width: 100%;
 	
 	  }
-	  footer .footer2 h4 {
+	  /* footer .footer2 h4 {
 		font-size: 20px;
-	  }
+	  } */
 
 	.products-list .product-item{
 		width: 30.3%;
@@ -335,7 +335,7 @@ header {
 		margin: 0;
 		margin-bottom: 50px;
 	  }
-	  footer .footer1 .lado1 .look {
+	  /* footer .footer1 .lado1 .look {
 		font-size: 70px;
 	  }
 	
@@ -344,15 +344,15 @@ header {
 	  }
 	  footer .footer1 .lado2 a {
 		font-size: 20px;
-	  }
+	  } */
 	
 	  footer .footer2 {
 		width: 100%;
 	
 	  }
-	  footer .footer2 h4 {
+	  /* footer .footer2 h4 {
 		font-size: 20px;
-	  }
+	  } */
 	.category_list,
 	.products-list{
 		width: 100%;
@@ -422,7 +422,7 @@ header {
 		margin: 0;
 		margin-bottom: 50px;
 	  }
-	  footer .footer1 .lado1 .look {
+	  /* footer .footer1 .lado1 .look {
 		font-size: 70px;
 	  }
 	
@@ -431,15 +431,15 @@ header {
 	  }
 	  footer .footer1 .lado2 a {
 		font-size: 20px;
-	  }
+	  } */
 	
 	  footer .footer2 {
 		width: 100%;
 	
 	  }
-	  footer .footer2 h4 {
+	  /* footer .footer2 h4 {
 		font-size: 20px;
-	  }
+	  } */
 
 	.category_list{
 		flex-direction: column;
@@ -483,7 +483,7 @@ header {
 		display: flex;
 		flex-direction: column;
 		height: 90%;
-		width: 94%;
+		width: 100%;
 	  }
 	  footer .footer1 .lado1,
 	  footer .footer1 .lado2 {
@@ -492,7 +492,7 @@ header {
 	  }
 	
 	  footer .footer2 {
-		width: 94%;
+		width: 100%;
 	  }
 	
 
@@ -544,7 +544,7 @@ header {
 		display: flex;
 		flex-direction: column;
 		height: 90%;
-		width: 94%;
+		width: 100%;
 	  }
 	  footer .footer1 .lado1,
 	  footer .footer1 .lado2 {
@@ -553,7 +553,7 @@ header {
 	  }
 	
 	  footer .footer2 {
-		width: 94%;
+		width: 100%;
 	  }
 	
 

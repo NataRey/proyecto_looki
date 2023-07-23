@@ -36,7 +36,14 @@ header {
   width: 100%;
   background-color: #06113b;
   color: white;
-  padding: 25px;
+  padding: 5px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 10px 55px;
 }
 header .navbar .ll {
   font-family: "Lobster Two", cursive;
@@ -560,6 +567,9 @@ form .page .btns button.next {
     align-items: center;
   }
 
+  .navbar {
+    padding: 10px 0;
+  }
   header .navbar a {
     display: none !important;
     padding-left: 130px;

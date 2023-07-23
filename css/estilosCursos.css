@@ -9,32 +9,49 @@
 body{
 	background: #E0E4E5;
 	font-family: 'Open Sans', sans-serif;
+	background-image: linear-gradient(35deg, gray, white,gray, white, gray);
 }
-
 header {
+	position: relative;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	background-color: #06113B;
+	background-color: #06113b;
 	color: white;
 	padding: 5px;
-	font-family: 'Lobster Two', cursive;
   }
-  
-  .navbar a {
-	font-family: 'Poppins', sans-serif;
+  .navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0 10px 55px;
+  }
+  header .navbar .ll {
+	font-family: "Lobster Two", cursive;
+	font-size: 55px;
+	margin-top: 5px;
+	color: rgb(242, 237, 244);
+	padding-left: 55px;
+  }
+  header .navbar a {
+	font-family: "Poppins", sans-serif;
 	color: white;
-	padding-left: 75px;
+	padding-left: 35px;
 	font-weight: 500;
+	font-size: 16px;
 	text-decoration: none;
+	justify-items: center;
+	align-items: center;
   }
   
-  .navbar a:hover{ 
+  .navbar a:hover {
 	color: rgb(246, 217, 209);
-	opacity: 1;  
+	opacity: 1;
 	font-weight: 900;
-  } 
+  }
 
 .wrap{
 	max-width: 1100px;
@@ -43,19 +60,21 @@ header {
 }
 
 .wrap > h1{
-	color: #494B4D;
+	color: #4d4949;
 	font-weight: 400;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	margin: 15px 0px;
+	font-weight: bolder;
+	color: #06113B;
 }
 
 .wrap > h1:after{
 	content: '';
 	width: 100%;
 	height: 1px;
-	background: #C7C7C7;
+	background: #c7c7c7;
 	margin: 20px 0;
 }
 
@@ -86,7 +105,7 @@ header {
 	background: #2D3E50;
 }
 
-/* PRODUCTOS ============*/
+/* videos ============*/
 
 .products-list{
 	width: 82%;
@@ -367,6 +386,9 @@ header {
 		justify-content: center;
 		align-items: center;
 	  }
+	  .navbar {
+		padding: 10px 0;
+	  }
 	
 	  header .navbar a {
 		display: none;
@@ -375,7 +397,7 @@ header {
 	  
 	  header .ll {
 		margin: 0;
-		padding: 0;
+		padding: 0 !important;
 		font-size: 100px;
 	  }
 	
@@ -436,7 +458,9 @@ header {
 		justify-content: center;
 		align-items: center;
 	  }
-	
+	  .navbar {
+		padding: 10px 0;
+	  }
 	  header .navbar a {
 		display: none;
 		padding-left: 130px;
@@ -444,7 +468,7 @@ header {
 	  
 	  header h1 {
 		margin: 0;
-		padding: 0;
+		padding: 0 !important;
 	  }
 	
 	  footer {
@@ -494,6 +518,9 @@ header {
 		justify-content: center;
 		align-items: center;
 	  }
+	  .navbar {
+		padding: 10px 0;
+	  }
 	
 	  header .navbar a {
 		display: none;
@@ -502,7 +529,7 @@ header {
 	  
 	  header h1 {
 		margin: 0;
-		padding: 0;
+		padding: 0 !important;
 	  }
 	
 	  footer {

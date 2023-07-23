@@ -1,47 +1,85 @@
-// Info date
-const dateNumber = document.getElementById('dateNumber');
-const dateText = document.getElementById('dateText');
-const dateMonth = document.getElementById('dateMonth');
-const dateYear = document.getElementById('dateYear');
+ // Función para agregar un enlace a la lista de enlaces
+ function agregarEnlace() {
+    const linkInput = document.getElementById('linkInput');
+    const enlace = linkInput.value.trim();
 
-// Tasks Container
-const tasksContainer = document.getElementById('tasksContainer');
+    if (enlace !== '') {
+        // Obtener la lista de enlaces del localStorage o inicializarla si es la primera vez
+        let enlaces = JSON.parse(localStorage.getItem('enlaces')) || [];
 
-const setDate = () => {
-    const date = new Date();
-    dateNumber.textContent = date.toLocaleString('es', { day: 'numeric' });
-    dateText.textContent = date.toLocaleString('es', { weekday: 'long' });
-    dateMonth.textContent = date.toLocaleString('es', { month: 'short' });
-    dateYear.textContent = date.toLocaleString('es', { year: 'numeric' });
-};
+        // Agregar el nuevo enlace a la lista de enlaces
+        enlaces.push({ type: 'link', content: enlace });
 
-const addNewTask = event => {
-    event.preventDefault();
-    const { value } = event.target.taskText;
-    if(!value) return;
-    const task = document.createElement('div');
-    task.classList.add('task', 'roundBorder');
-    task.addEventListener('click', changeTaskState)
-    task.textContent = value;
-    tasksContainer.prepend(task);
-    event.target.reset();
-};
+        // Guardar la lista actualizada en el localStorage
+        localStorage.setItem('enlaces', JSON.stringify(enlaces));
 
-const changeTaskState = event => {
-    event.target.classList.toggle('done');
-};
-
-const order = () => {
-    const done = [];
-    const toDo = [];
-    tasksContainer.childNodes.forEach( el => {
-        el.classList.contains('done') ? done.push(el) : toDo.push(el)
-    })
-    return [...toDo, ...done];
+        // Limpiar el campo de entrada y actualizar la lista de enlaces en la página
+        linkInput.value = '';
+        mostrarEnlaces();
+    }
 }
 
-const renderOrderedTasks = () => {
-    order().forEach(el => tasksContainer.appendChild(el))
+// Función para eliminar un enlace de la lista de enlaces
+function eliminarEnlace(index) {
+    let enlaces = JSON.parse(localStorage.getItem('enlaces')) || [];
+    enlaces.splice(index, 1);
+    localStorage.setItem('enlaces', JSON.stringify(enlaces));
+    mostrarEnlaces();
 }
 
-setDate();
+// Función para mostrar los enlaces y tareas guardadas en la lista
+function mostrarEnlaces() {
+    const enlacesList = document.getElementById('enlacesList');
+    const enlaces = JSON.parse(localStorage.getItem('enlaces')) || [];
+
+    // Limpiar la lista antes de actualizarla
+    enlacesList.innerHTML = '';
+
+    // Agregar cada enlace o tarea a la lista
+    enlaces.forEach((item, index) => {
+        const li = document.createElement('li');
+        const icon = document.createElement('i');
+
+        if (item.type === 'link') {
+            const a = document.createElement('a');
+            a.href = item.content;
+            a.textContent = item.content;
+            li.appendChild(a);
+        } else if (item.type === 'text') {
+            li.textContent = item.content;
+        }
+
+        // Agregar el ícono de eliminar (Font Awesome) al ícono de tarea
+        icon.classList.add('fas', 'fa-trash', 'de');
+        icon.setAttribute('data', 'eliminado');
+        icon.setAttribute('id', index);
+        icon.onclick = () => eliminarEnlace(index);
+        li.appendChild(icon);
+
+        enlacesList.appendChild(li);
+    });
+}
+
+// Función para agregar una tarea a la lista de enlaces y tareas
+function agregarTarea() {
+    const tareaInput = document.getElementById('input');
+    const tarea = tareaInput.value.trim();
+
+    if (tarea !== '') {
+        // Obtener la lista de enlaces y tareas del localStorage o inicializarla si es la primera vez
+        let enlaces = JSON.parse(localStorage.getItem('enlaces')) || [];
+
+        // Agregar la nueva tarea a la lista de enlaces y tareas
+        enlaces.push({ type: 'text', content: tarea });
+
+        // Guardar la lista actualizada en el localStorage
+        localStorage.setItem('enlaces', JSON.stringify(enlaces));
+
+        // Limpiar el campo de entrada y actualizar la lista de enlaces en la página
+        tareaInput.value = '';
+        mostrarEnlaces();
+    }
+}
+
+// Llamar a la función mostrarEnlaces al cargar la página para mostrar los enlaces y tareas guardados previamente
+mostrarEnlaces();

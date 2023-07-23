@@ -5,69 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Look-up Feed</title>
-    <link rel="shortcut icon" href="../Recursos/L.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://kit.fontawesome.com/276e522079.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link rel="stylesheet" href="../css/feed.css" />
-    <script src="../js/feed.js" type="text/javascript" defer></script>
-    <script src="../js/scriptfeed.js"></script>
+    
+
     <!-- <script src="../js/scriptvideo.js"></script> -->
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <h2>Look-up</h2>
-        <div class="navbarNav">
-          <a href="./nosotros.html">Sobre nosotros</a>
-          <a href="./contactenos.html">Contactanos</a>
-        </div>
+        <h1 class="ll">Look-up</h1>
+        <a href="../index.html">Home</a>
+        <a href="./nosotros.html">Nosotros</a>
+        <a href="./contactenos.html">Contáctanos</a>
+        <a href="./cursos.html">Cursos</a>
+        <a href="./comunidad.html">Comunidad</a>
+        <a href="./feed.html">Feed</a>
       </nav>
     </header>
     <main>
-      <div class="img">
-      <div class="list roundBorder">
-        <div class="date">
-          <div class="dateRight">
-            <div id="dateNumber"></div>
-            <div>
-              <div id="dateMonth"></div>
-              <div id="dateYear"></div>
-            </div>
-          </div>
-          <div id="dateText"></div>
-        </div>
-        <form class="formulario" onsubmit="addNewTask(event)">
-            <div>
-                <input
-                    type="text"
-                    name="taskText"
-                    autocomplete="off"
-                    placeholder="Nueva tarea"
-                    class="roundBorder"
-                />
-          <button type="submit" class="addTaskButton">+</button>
-            </div>
-            <div>
-          <input type="text" class="roundBorder" id="nuevaURL" placeholder="Ingrese la URL de la imagen">
-          <button onclick="agregarElemento()" class="addTaskButton">+</button>
-            </div>
-            <!-- <div>
-                <input type="text" class="roundBorder" id="video-url-input" placeholder="Ingrese la URL del video">
-                <button type="submit" class="addTaskButton">+</button>
-            </div> -->
-          <button
-            type="button"
-            class="orderButton roundBorder"
-            onclick="renderOrderedTasks()"
-          >
-            Ordenar
-          </button>
-        </form>
-        <div id="tasksContainer" class="image-list"></div>
+      <div class="text-id">
+        <span>P</span>
+        <span>r</span>
+        <span>o</span>
+        <span>y</span>
+        <span>e</span>
+        <span>c</span>
+        <span>t</span>
+        <span>o</span>
+        <span>s</span>
       </div>
+      <!--h3 class="text-sd">Escoge tu ruta</h3-->
+      <section class="container">
+        <article class="form2">
+        <div class="perfil">
+            <h1>Hola, </h1>
+            <span>Vamos a cumplir tus metas</span>
+            <form class="form-id">
+              <input type="radio" id="opcion1" name="opciones" value="opcion1">
+              <label for="opcion1">Programación</label>
+            
+              <input type="radio" id="opcion2" name="opciones" value="opcion2">
+              <label for="opcion2">Diseño</label>
+            
+              <input type="radio" id="opcion3" name="opciones" value="opcion3">
+              <label for="opcion3">Bases de Datos</label>
+            </form>
+           
+        </div>
+        <div class="agregar-tarea">
+            <input type="text" id="input" placeholder="Nombre de Proyecto">
+            <i id="boton-enter" class="fas fa-plus-circle" onclick="agregarTarea()"></i>
+        </div>
+        
+        <div class="agregar-tarea">
+            <input type="text" id="linkInput" placeholder="Link de Proyecto">
+            <button onclick="agregarEnlace()" class="fas fa-plus-circle"></button>
+        </div>
+        </article>
+        <article class="form3">
+        <div class="seccion-tarea">
+            <h3>Estos son tus proyectos </h3>
+            <ul id="lista">
+                <ul id="enlacesList"></ul>
+               
+            </ul>
+        </div>
+       </article> 
+      </section>
+   <!--CR-->
+   <div class="testimonials">
+    <div class="inner">
+      <h1>Proyectos Disponibles</h1>
+      <div class="border"></div>
+      
+
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+            <img src="../img/p1.png" alt="">
+            <div class="name">Misiones on Fire</div>
+        
+            <p>
+            Crea una pagina web y apoya a niños, jóvenes y adultos en situación de vulnerabilidad de Colombia y Africa.
+            </p>
+            <a href="https://www.instagram.com/misionesonfire/" class="fa fa-instagram"></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="testimonial">
+            <img src="../img/p2.png" alt="">
+            <div class="name">Reforma Mujer</div>
+            
+
+            <p>
+              Crea una pagina web y apoya a las mujeres de Colombia en su proceso de transformacion integral.
+            </p>
+            <a href="https://www.instagram.com/reformamujer/" class="fa fa-instagram"></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="testimonial">
+            <img src="../img/p3.png" alt="">
+            <div class="name">Funbaglo</div>
+            <p>
+              Crea una pagina web y apoya a niños, jóvenes y adultos en situación de vulnerabilidad en la Guajira.
+            </p>
+            <a href="https://www.instagram.com/funbaglo/" class="fa fa-instagram"></a>
+          </div>
+        </div>
+      </div>
+  <div class="testimonials">
+    <div class="inner">
+       <h1>Tu puedes ser parte.</h1>    
     </div>
+  </div>
     </main>
+    <footer class="footerP">
+      <div class="footer1">
+        <div class="lado1">
+          <p href="../index.html" class="look">Look-up</p>
+  
+          <h4>La red social que cambia tu mundo.</h4>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <div class="lado2">
+          <h3>NOSOTROS</h3>
+          <a href="./nosotros.html">Acerca de</a>
+          <a href="./nosotros.html">Valores</a>
+          <a href="./contactenos.html">Contactenos</a>
+        </div>
+        <div class="lado2">
+          <h3>CURSOS</h3>
+          <a href="./nosotros.html">Cursos</a>
+          <a href="./nosotros.html">Proyectos</a>
+          <a href="./contactenos.html">Conexiones</a>
+        </div>
+  
+        <div class="lado2">
+          <h3>COMUNIDAD</h3>
+          <a href="./nosotros.html">Github</a>
+          <a href="./nosotros.html">Discord</a>
+          <a href="./contactenos.html">Telegram</a>
+        </div>
+      </div>
+      <div class="footer2">
+        <h4>© Copyright 2023 Look-Up Todos los derechos reservados</h4>
+      </div>
+    </footer>
+
+    <script src="/js/feed.js" type="text/javascript" defer></script>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
   </body>
 </html>

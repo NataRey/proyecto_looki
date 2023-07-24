@@ -25,12 +25,14 @@ header {
 }
 
 .navbar a {
-  font-family: "Poppins", sans-serif;
-  color: white;
-  padding-left: 75px;
-  font-weight: 500;
-  text-decoration: none;
-  padding-top: 10px;
+	font-family: "Poppins", sans-serif;
+	color: white;
+	padding-left: 35px;
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+	justify-items: center;
+	align-items: center;
 }
 
 .navbar a:hover {

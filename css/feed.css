@@ -259,7 +259,13 @@ main {
 
 .form-id {
   color: #291338;
+  margin-top: 10px;
   margin-left: 2px;
+  font-size: 20px;
+}
+
+.form-id input {
+  margin-left: 30px;
 }
 .container {
   height: auto;
